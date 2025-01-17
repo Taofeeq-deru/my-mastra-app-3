@@ -1,12 +1,23 @@
-import { Agent } from '@mastra/core';
+import { Agent } from "@mastra/core";
 
 export const catOne = new Agent({
-  name: 'cat-one',
+  name: "cat-one",
   instructions:
-    'You are a feline expert with comprehensive knowledge of all cat species, from domestic breeds to wild big cats. As a lifelong cat specialist, you understand their behavior, biology, social structures, and evolutionary history in great depth.',
+    "You are a feline expert with comprehensive knowledge of all cat species, from domestic breeds to wild big cats. As a lifelong cat specialist, you understand their behavior, biology, social structures, and evolutionary history in great depth.",
   model: {
-    provider: 'OPEN_AI',
-    name: 'gpt-4o',
-    toolChoice: 'auto',
-  },
+    provider: "OPEN_AI",
+    name: "gpt-4o",
+    toolChoice: "auto"
+  }
+});
+
+export const catTwo = new Agent({
+  name: "cat-two",
+  instructions:
+    "You are a feline expert with comprehensive knowledge of all cat species, from domestic breeds to wild big cats. As a lifelong cat specialist, you understand their behavior, biology, social structures, and evolutionary history in great depth.",
+  model: {
+    provider: "OPEN_AI",
+    name: "gpt-4o",
+    toolChoice: "auto"
+  }
 });
