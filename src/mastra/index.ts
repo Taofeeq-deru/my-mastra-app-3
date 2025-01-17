@@ -1,14 +1,12 @@
+import { Mastra, createLogger } from "@mastra/core";
 
-import { Mastra, createLogger } from '@mastra/core';
-
-
-import { catOne } from './agents/index';
+import { catOne, catTwo } from "./agents/index";
 
 export const mastra = new Mastra({
-  agents: { catOne },
-  
+  agents: { catOne, catTwo },
+
   logger: createLogger({
-    type: 'CONSOLE',
-    level: 'INFO',
-  }),
+    type: "CONSOLE",
+    level: "INFO"
+  })
 });
